@@ -1,4 +1,5 @@
 import "./App.css";
+import CartLogic from "./components/CartLogic";
 import Navbar from "./components/Navbar";
 import SelectProduct from "./components/SelectProduct";
 
@@ -8,11 +9,13 @@ function App() {
       <div className="w-full min-h-screen ">
         <div className="max-w-5xl mx-auto">
           <Navbar />
-          <div className="grid grid-cols-2 gap-12">
+          <div className="grid grid-cols-2 gap-12 m-12">
             <div className="">
-              <SelectProduct/>
+              <SelectProduct />
             </div>
-            <div className="bg-green-400 h-50">e</div>
+            <div className="h-50">
+              <CartLogic></CartLogic>
+            </div>
           </div>
         </div>
       </div>
