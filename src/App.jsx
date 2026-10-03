@@ -6,6 +6,8 @@ function App() {
       <h1 class="text-3xl font-bold underline">Waiyan MIn Thwin</h1>
 
       <h1 class="text-3xl font-bold underline">MT</h1>
+
+      <h1 class="text-3xl font-bold underline">Wai Yan Paing</h1>
     </>
   );
 }
