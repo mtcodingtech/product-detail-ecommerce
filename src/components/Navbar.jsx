@@ -1,8 +1,15 @@
+import { useState } from "react";
+import Drawer from "./Drawer";
 import NavLinks from "./NavLinks";
 
+
+
 function Navbar() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(true);
   return (
-    <nav className="flex items-center justify-between p-4 md:py-8 md:px-4 border-b border-b-gray-200">
+
+    <>
+      <nav className="flex items-center justify-between p-4 md:py-8 md:px-4 border-b border-b-gray-200">
       <div className="flex items-center gap-4 md:gap-12">
         <img src="/images/icon-menu.svg" alt="logo" className="md:hidden" />
         <img src="/images/logo.svg" alt="logo" />
@@ -17,6 +24,10 @@ function Navbar() {
         />
       </div>
     </nav>
+    {isDrawerOpen && <Drawer></Drawer>}
+    
+    </>
+  
   );
 }
 
