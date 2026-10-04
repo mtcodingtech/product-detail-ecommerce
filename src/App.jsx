@@ -9,11 +9,11 @@ function App() {
       <div className="w-full min-h-screen ">
         <div className="max-w-5xl mx-auto">
           <Navbar />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 m-0 md:m-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 m-0 md:m-12 place-items-center">
             <div className="">
               <SelectProduct />
             </div>
-            <div className="h-50">
+            <div className="">
               <CartLogic></CartLogic>
             </div>
           </div>

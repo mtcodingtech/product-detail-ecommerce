@@ -24,9 +24,7 @@ const CartLogic = () => {
   return (
     <div className="relative w-full max-w-xl mx-auto p-4">
       <div className="flex justify-end mb-6">
-        <button onClick={() => setOpenCart(!openCart)} className="relative">
-          <span className="w-6 h-6 border border-gray-700 block"></span>
-        </button>
+       
 
         {openCart && (
           <div className="absolute right-0 top-10 w-72 bg-white shadow-xl rounded-lg p-4">
