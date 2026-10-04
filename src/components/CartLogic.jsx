@@ -77,12 +77,13 @@ const CartLogic = () => {
           <span className="bg-orange-100 text-orange-600 px-2 py-1 rounded-md text-sm font-semibold">
             50%
           </span>
+          <span className="md:hidden ml-auto text-gray-400 line-through text-sm">$250.00</span>
         </div>
 
-        <span className="text-gray-400 line-through text-sm">$250.00</span>
+        <span className="hidden md:block text-gray-400 line-through text-sm">$250.00</span>
 
-        <div className="flex gap-4 mt-4">
-          <div className="flex items-center bg-gray-100 rounded-lg px-3 py-2 w-32 justify-between">
+        <div className="flex flex-col md:flex gap-4 mt-4">
+          <div className="flex items-center bg-gray-100 rounded-lg px-3 py-2 w-full md:w-32 justify-between">
             <button
               onClick={minus}
               className="text-orange-500 font-bold text-xl"
