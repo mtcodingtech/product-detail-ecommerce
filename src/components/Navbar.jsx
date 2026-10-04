@@ -24,7 +24,7 @@ function Navbar() {
         />
       </div>
     </nav>
-    {isDrawerOpen && <Drawer></Drawer>}
+    {isDrawerOpen && <Drawer setIsDrawerOpen={setIsDrawerOpen}></Drawer>}
     
     </>
   

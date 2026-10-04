@@ -1,5 +1,4 @@
-
-const links = ["Collections", "Men", "Women", "About", "Contact"];
+import { links } from "../../utils/dummyData";
 
 function NavLinks() {
   return (
